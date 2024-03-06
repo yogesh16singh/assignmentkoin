@@ -9,10 +9,10 @@ const TeamMember = () => {
           alt="Team-Member-1"
           className="object-cover w-32 h-24 rounded-md"
         />
-        <h3 className="font-bold text-sm tracking-tight py-1">John Doe</h3>
-        <h4 className="opacity-60 font-medium text-xs leading-3">
+        <h4 className="font-bold text-sm tracking-tight py-1">John Doe</h4>
+        <h5 className="opacity-60 font-medium text-xs leading-3">
           Designation here
-        </h4>
+        </h5>
       </div>
       <p className="w-full text-[13px]">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
