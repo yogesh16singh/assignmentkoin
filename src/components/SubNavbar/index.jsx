@@ -1,8 +1,10 @@
 import clsx from "clsx";
 import { useState, useEffect } from "react";
-const SubNavbar = () => {
-  const [currentPath, setCurrentPath] = useState(window.location.hash);
+import { useLocation } from "react-router-dom";
 
+const SubNavbar = () => {
+  const location = useLocation();
+  const [currentPath, setCurrentPath] = useState(location.hash);
   useEffect(() => {
     const onHashChange = () => {
       setCurrentPath(window.location.hash);
@@ -13,8 +15,9 @@ const SubNavbar = () => {
       window.removeEventListener("hashchange", onHashChange);
     };
   }, []);
+
   return (
-    <nav className=" max-w-5xl w-full my-4 overflow-x-scroll">
+    <nav className=" lg:w-4/5 w-full my-4 overflow-x-scroll">
       <ul className="list-none flex md:gap-12 gap-8 text-base font-bold border-slate-600/20 border-b items-center text-center">
         <li
           className={clsx(

@@ -13,7 +13,7 @@ const TrendingSidebar = () => {
   const sidebarTrendingCoinColumn = trendingCoins?.slice(0, 3);
 
   return (
-    <div className="bg-white rounded-lg max-w-md p-4 my-4">
+    <div className="bg-white rounded-lg max-w-md p-4 my-2">
       <H2 value={"Trending Coins (24h)"} />
       <div className="flex flex-col">
         {sidebarTrendingCoinColumn.map((coin) => (

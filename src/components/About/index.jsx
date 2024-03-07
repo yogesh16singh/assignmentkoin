@@ -1,25 +1,32 @@
+import { useParams } from "react-router-dom";
+
 import { H2, H3 } from "../shared/Typography";
 import { FaArrowRightLong } from "react-icons/fa6";
 import tax from "../../assets/tax.jpg";
 import stock from "../../assets/stock.jpg";
+import { useContext } from "react";
+import { CryptoCoinContext } from "../../context/CryptoCoinContext";
+
 const About = () => {
+  const { id } = useParams();
+  let { description } = useContext(CryptoCoinContext);
+
+  description =
+    description ||
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est ullamcorper eget nulla facilisi etiam dignissim. Ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum. Morbi tincidunt augue interdum velit euismod.";
+
   return (
     <section
-      className="p-6 rounded-lg shadow-lg bg-white max-w-5xl w-full my-4"
+      className="p-6 rounded-lg shadow-lg bg-white lg:w-4/5 w-full my-4"
       id="overview"
     >
-      <H2 value={"About Bitcoin"} />
+      <H2 value={`About ${id}`} />
       <div className="border-b-slate-600/20 border-b-2">
-        <H3 value={"What is Bitcoin?"} />
-        <p className="text-sm pb-2">
-          Bitcoin is the first decentralized cryptocurrency. Nodes in the
-          peer-to-peer bitcoin network verify transactions through cryptography
-          and record them in a public distributed ledger, called a blockchain,
-          without central oversight.
-        </p>
+        <H3 value={`What is ${id}?`} />
+        <p className="text-sm pb-2">{description}</p>
       </div>
-      <div className="border-b-slate-600/20 border-b-2">
-        <H3 value={"How does Bitcoin work?"} />
+      <article className="border-b-slate-600/20 border-b-2">
+        <H3 value={`How does ${id} work?`} />
         <p className="text-sm pb-2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Est
@@ -46,10 +53,10 @@ const About = () => {
           ullamcorper dignissim cras tincidunt lobortis feugiat. Ultrices vitae
           auctor eu augue ut lectus.
         </p>
-      </div>
+      </article>
 
       <div className="flex flex-col pt-3">
-        <H2 value={"Already Holding Bitcoin?"} />
+        <H2 value={`Already Holding ${id}?`} />
         <div className="border-b-slate-600/20 border-b-2 flex gap-6 py-2 flex-wrap md:flex-nowrap">
           <div className="rounded-md w-full hover:shadow-md bg-gradient-to-r from-emerald-400 to-cyan-800  flex gap-6 items-center p-3">
             <img

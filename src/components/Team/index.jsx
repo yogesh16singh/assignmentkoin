@@ -4,7 +4,7 @@ import { H2 } from "../shared/Typography";
 const Team = () => {
   return (
     <section
-      className="p-6 rounded-lg shadow-lg bg-white max-w-5xl w-full "
+      className="p-6 rounded-lg shadow-lg bg-white lg:w-4/5 w-full"
       id="team"
     >
       <H2 value="Team" />

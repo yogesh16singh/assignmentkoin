@@ -12,3 +12,12 @@ html {
 .slick-slide div:nth-child(1) {
   margin-right: 10px;
 }
+.slick-next {
+  right: -15px;
+}
+
+.slick-next::before {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.44);
+  line-height: 1.2;
+}
