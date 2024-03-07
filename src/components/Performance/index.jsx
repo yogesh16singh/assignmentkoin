@@ -33,8 +33,8 @@ const Performance = () => {
 
         {/* <div className="max-w-xs md:max-w-sm lg:max-w-xl xl:max-w-3xl w-full h-2 rounded-md  bg-gradient-to-r from-red-500 via-yellow-500 to-green-500"></div> */}
         <PerformanceSlider
-          low={coinMarketDetail[0]?.low_24h?.toFixed(2)}
-          high={coinMarketDetail[0]?.high_24h?.toFixed(2)}
+          low={coinMarketDetail[0]?.low_24h}
+          high={coinMarketDetail[0]?.high_24h}
         />
         <div className="flex flex-col gap-1 items-center">
           <span className="text-sm text-right">Today&apos;s High</span>
