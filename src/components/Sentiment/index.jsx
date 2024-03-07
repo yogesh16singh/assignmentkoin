@@ -24,23 +24,23 @@ const Sentiment = () => {
             title="Check Estimates"
           />
         </div>
-        <div className="flex items-center gap-6 flex-wrap md:flex-nowrap">
-          <div className="size-36 text-5xl font-medium flex items-center justify-center bg-green-100 text-green-600 rounded-full">
-            76 <span className="text-lg">%</span>
+        <div className="flex items-center md:gap-6 gap-3 ">
+          <div className="md:size-36 size-20 md:text-5xl text-xl font-medium flex items-center justify-center bg-green-100 text-green-600 rounded-full">
+            76 <span className="md:text-lg text-base">%</span>
           </div>
 
-          <div className="flex flex-col gap-3 font-semibold w-full max-w-md">
+          <div className="flex flex-col gap-3 font-semibold w-full md:max-w-md max-w-[12rem]">
             <div className="text-sm inline-flex items-center gap-4">
               <span className="opacity-70 w-8">Buy </span>
-              <div className=" w-[76%] h-2 bg-green-600"></div> 76%
+              <div className=" w-[76%] rounded-sm h-2 bg-green-600"></div> 76%
             </div>
             <div className="text-sm inline-flex items-center gap-4">
               <span className="opacity-70 w-8">Hold </span>
-              <div className=" w-[8%] h-2 bg-slate-500"></div>8%
+              <div className=" w-[8%] h-2 bg-slate-500 rounded-sm"></div>8%
             </div>
             <div className="text-sm inline-flex items-center gap-4">
               <span className="opacity-70 w-8">Sell</span>
-              <div className=" w-[16%] h-2 bg-red-600"></div> 16%
+              <div className=" w-[16%] h-2 bg-red-600 rounded-sm"></div> 16%
             </div>
           </div>
         </div>
