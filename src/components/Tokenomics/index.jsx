@@ -3,11 +3,11 @@ import { H2, H3 } from "../shared/Typography";
 
 const Tokenomics = () => {
   return (
-    <section className="p-6 rounded-lg shadow-lg bg-white max-w-3xl w-full my-4">
+    <section className="p-6 rounded-lg shadow-lg bg-white max-w-5xl w-full my-4">
       <H2 value="Tokenomics" />
       <H3 value="Intial Distribution" />
       <div className="flex items-center gap-4 flex-wrap md:flex-nowrap">
-        <img src={PieSVG} alt="Donut-Chart" className="md:w-56 w-40" />
+        <img src={PieSVG} alt="Donut-Chart" className="w-36" />
         <div className="flex flex-col md:gap-2 font-semibold">
           <span className="flex items-center gap-3 text-sm">
             <span className="w-2 h-2 bg-blue-600 rounded-full"></span>Crowdsale

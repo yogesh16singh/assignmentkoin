@@ -3,7 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 const Header = () => {
   return (
     <>
-      <nav className="flex justify-between fixed top-0 w-full px-8 py-4 border-b shadow-md items-center bg-white">
+      <nav className="flex justify-between fixed top-0 w-full pl-16 pr-10 py-4 border-b shadow-md items-center bg-white">
         <img src={Logo} alt="Koinx" className="w-28 object-contain h-8" />
 
         <ul className="md:flex md:gap-8 gap-4 items-center text-base hidden">
@@ -16,7 +16,7 @@ const Header = () => {
           <li className="capitalize font-bold tracking-tight">
             <a href="#">resource center</a>
           </li>
-          <button className="px-3 py-2 bg-blue-600 rounded-lg text-slate-200 text-base font-bold ml-6">
+          <button className="px-6 py-2  bg-[#0052fe] rounded-lg text-white text-base font-bold ml-6">
             Get Started
           </button>
         </ul>
