@@ -14,6 +14,8 @@ html {
 }
 .slick-next {
   right: -15px;
+  background-color: #958c8c !important;
+  border-radius: 50%;
 }
 
 .slick-next::before {
