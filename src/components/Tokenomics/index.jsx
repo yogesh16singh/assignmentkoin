@@ -1,12 +1,11 @@
 import PieSVG from "../../assets/chart.png";
+import { H2, H3 } from "../shared/Typography";
+
 const Tokenomics = () => {
   return (
     <section className="p-6 rounded-lg shadow-lg bg-white max-w-3xl w-full my-4">
-      <h2 className="text-2xl font-bold text-left">Tokenomics</h2>
-
-      <h3 className="font-bold text-lg tracking-tight py-4">
-        Intial Distribution
-      </h3>
+      <H2 value="Tokenomics" />
+      <H3 value="Intial Distribution" />
       <div className="flex items-center gap-4 flex-wrap md:flex-nowrap">
         <img src={PieSVG} alt="Donut-Chart" className="md:w-56 w-40" />
         <div className="flex flex-col md:gap-2 font-semibold">
