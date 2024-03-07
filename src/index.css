@@ -9,3 +9,6 @@ html {
   scroll-behavior: smooth;
   background-color: #eff2f5;
 }
+.slick-slide div:nth-child(1) {
+  margin-right: 10px;
+}

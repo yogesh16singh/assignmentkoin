@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { TrendingContext } from "../../context/TrendingContext";
+import { CryptoCoinContext } from "../../context/CryptoCoinContext";
 import { BiSolidUpArrow } from "react-icons/bi";
 
 import { H2 } from "../shared/Typography";
@@ -8,7 +8,7 @@ import clsx from "clsx";
 import { formatPercentage, PositiveTrend } from "../../utils";
 
 const TrendingSidebar = () => {
-  const { trendingCoins } = useContext(TrendingContext);
+  const { trendingCoins } = useContext(CryptoCoinContext);
 
   const sidebarTrendingCoinColumn = trendingCoins?.slice(0, 3);
 

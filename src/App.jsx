@@ -1,11 +1,11 @@
-import { TrendingContextProvider } from "./context/TrendingContext";
+import { CryptoCoinContextProvider } from "./context/CryptoCoinContext";
 import LandingPage from "./pages/LandingPage";
 
 const App = () => {
   return (
-    <TrendingContextProvider>
+    <CryptoCoinContextProvider>
       <LandingPage />
-    </TrendingContextProvider>
+    </CryptoCoinContextProvider>
   );
 };
 
