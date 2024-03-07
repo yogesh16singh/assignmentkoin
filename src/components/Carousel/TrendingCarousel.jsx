@@ -72,7 +72,7 @@ const TrendingCarousel = () => {
                     : "-"}
                   {Math.abs(
                     coin.item.data.price_change_percentage_24h.usd,
-                  ).toFixed(2) + "%"}
+                  )?.toFixed(2) + "%"}
                 </div>
               </div>
               <div
@@ -114,7 +114,7 @@ const TrendingCarousel = () => {
                   : "-"}
                 {Math.abs(
                   coin.item.data.price_change_percentage_24h.usd,
-                ).toFixed(2) + "%"}
+                )?.toFixed(2) + "%"}
               </div>
             </div>
             <div

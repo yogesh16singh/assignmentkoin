@@ -10,7 +10,7 @@ import {
 const Fundamentals = ({ coinMarketDetail }) => {
   const volumeIsToMarketCap = (
     coinMarketDetail[0]?.total_volume / coinMarketDetail[0]?.market_cap
-  ).toFixed(2);
+  )?.toFixed(2);
 
   return (
     <>
@@ -35,7 +35,7 @@ const Fundamentals = ({ coinMarketDetail }) => {
             <span className="text-black text-right">
               {` ${
                 coinMarketDetail[0]?.low_24h
-              } / ${coinMarketDetail[0]?.high_24h.toFixed(2)} `}
+              } / ${coinMarketDetail[0]?.high_24h?.toFixed(2)} `}
             </span>{" "}
           </div>
           <div className="text-slate-600/80 text-sm py-3 border-b-slate-700/20 border-b-2 flex justify-between">
@@ -67,7 +67,7 @@ const Fundamentals = ({ coinMarketDetail }) => {
           <div className="text-slate-600/80 text-sm py-3 border-b-slate-700/20 border-b-2 flex justify-between">
             Market Cap Dominance
             <span className="text-black text-right">
-              {(volumeIsToMarketCap * 120).toFixed(2)}%
+              {(volumeIsToMarketCap * 120)?.toFixed(2)}%
             </span>
           </div>
           <div className="text-slate-600/80 text-sm py-3 border-b-slate-700/20 border-b-2 flex justify-between">
@@ -86,7 +86,7 @@ const Fundamentals = ({ coinMarketDetail }) => {
                       : "text-red-500",
                   )}
                 >
-                  {coinMarketDetail[0]?.ath_change_percentage.toFixed(2)}%
+                  {coinMarketDetail[0]?.ath_change_percentage?.toFixed(2)}%
                 </span>
               </span>
               <span className="text-black text-right text-xs">
@@ -106,7 +106,7 @@ const Fundamentals = ({ coinMarketDetail }) => {
                       : "text-red-500",
                   )}
                 >
-                  {coinMarketDetail[0]?.atl_change_percentage.toFixed(2)}%
+                  {coinMarketDetail[0]?.atl_change_percentage?.toFixed(2)}%
                 </span>
               </span>
               <span className="text-black text-right text-xs">

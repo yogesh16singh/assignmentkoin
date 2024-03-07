@@ -21,7 +21,7 @@ const PerformanceSlider = ({ low = 15115.15, high = 15845.12 }) => {
         style={{ left: `${left}%` }}
         className="text-base absolute top-9 font-semibold"
       >
-        {mappedValue.toFixed(2)}
+        {mappedValue?.toFixed(2)}
       </div>
     </div>
   );
