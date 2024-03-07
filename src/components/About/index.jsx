@@ -47,7 +47,7 @@ const About = () => {
 
       <div className="flex flex-col pt-3">
         <H2 value={"Already Holding Bitcoin?"} />
-        <div className="border-b-slate-600/20 border-b-2 flex gap-6 py-2">
+        <div className="border-b-slate-600/20 border-b-2 flex gap-6 py-2 flex-wrap md:flex-nowrap">
           <div className="rounded-md w-full hover:shadow-md bg-gradient-to-r from-emerald-400 to-cyan-800  flex gap-6 items-center p-3">
             <img
               src={tax}
