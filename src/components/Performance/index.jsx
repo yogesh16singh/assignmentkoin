@@ -6,6 +6,15 @@ import PerformanceSlider from "./PerformanceSlider";
 
 const Performance = () => {
   const { coinMarketDetail } = useContext(CryptoCoinContext);
+  if (coinMarketDetail.status.error_code === 429)
+    return (
+      <section
+        className="p-6 rounded-lg shadow-lg bg-white lg:w-4/5 w-full my-4"
+        id="fundamentals"
+      >
+        Too many API Requests. Wait for a while and try again.
+      </section>
+    );
 
   return (
     <section
