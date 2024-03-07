@@ -3,7 +3,10 @@ import { H2, H3 } from "../shared/Typography";
 
 const Tokenomics = () => {
   return (
-    <section className="p-6 rounded-lg shadow-lg bg-white max-w-5xl w-full my-4">
+    <section
+      className="p-6 rounded-lg shadow-lg bg-white max-w-5xl w-full my-4"
+      id="tokenomics"
+    >
       <H2 value="Tokenomics" />
       <H3 value="Intial Distribution" />
       <div className="flex items-center gap-4 flex-wrap md:flex-nowrap">

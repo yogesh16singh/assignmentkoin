@@ -4,7 +4,7 @@ import TrendingSidebar from "./TrendingSidebar";
 
 const Sidebar = () => {
   return (
-    <aside className="fixed top-20 right-10 max-w-md">
+    <aside className="lg:fixed top-20 right-10 md:max-w-4xl px-4 my-4 md:px-8 lg:px-0 lg:my-0">
       <div className="bg-[#0052fe] text-white px-6 py-10 flex flex-col items-center gap-3 max-w-sm rounded-lg">
         <h2 className="text-center text-xl font-bold leading-9">
           Get Started with KoinX <br /> for FREE
@@ -19,7 +19,7 @@ const Sidebar = () => {
           Get Started for FREE <FaArrowRightLong />
         </button>
       </div>
-      <TrendingSidebar />
+      {/* <TrendingSidebar /> */}
     </aside>
   );
 };

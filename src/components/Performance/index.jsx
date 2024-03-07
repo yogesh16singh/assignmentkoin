@@ -3,7 +3,10 @@ import Fundamentals from "./Fundamentals";
 
 const Performance = () => {
   return (
-    <section className="p-6 rounded-lg shadow-lg bg-white max-w-5xl w-full my-4">
+    <section
+      className="p-6 rounded-lg shadow-lg bg-white max-w-5xl w-full my-4"
+      id="fundamentals"
+    >
       <H2 value="Performance" />
 
       <div className="flex justify-between items-center py-4">

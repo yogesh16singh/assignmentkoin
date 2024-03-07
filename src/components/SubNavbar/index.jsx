@@ -1,82 +1,94 @@
 import clsx from "clsx";
+import { useState, useEffect } from "react";
+const SubNavbar = () => {
+  const [currentPath, setCurrentPath] = useState(window.location.hash);
 
-const SubHeader = ({ active }) => {
+  useEffect(() => {
+    const onHashChange = () => {
+      setCurrentPath(window.location.hash);
+    };
+
+    window.addEventListener("hashchange", onHashChange);
+    return () => {
+      window.removeEventListener("hashchange", onHashChange);
+    };
+  }, []);
   return (
     <nav className=" max-w-5xl w-full my-4 overflow-x-scroll">
       <ul className="list-none flex md:gap-12 gap-8 text-base font-bold border-slate-600/20 border-b items-center text-center">
         <li
           className={clsx(
             "py-2 ",
-            active
+            currentPath === "#overview"
               ? "text-blue-600 border-blue-600 border-b-2"
               : "text-slate-600 ",
           )}
         >
-          <a href="#">Overview</a>
+          <a href="#overview">Overview</a>
         </li>
         <li
           className={clsx(
             "py-2 ",
-            active
+            currentPath === "#fundamentals"
               ? "text-blue-600 border-blue-600 border-b-2"
               : "text-slate-600",
           )}
         >
-          <a href="#">Fundamentals</a>
+          <a href="#fundamentals">Fundamentals</a>
         </li>
         <li
           className={clsx(
             "py-2 ",
-            active
+            currentPath === "#newinsights"
               ? "text-blue-600 border-blue-600 border-b-2"
               : "text-slate-600",
           )}
         >
-          <a href="#">New Insights</a>
+          <a href="#newinsights">New Insights</a>
         </li>
         <li
           className={clsx(
             "py-2 ",
-            active
+            currentPath === "#sentiments"
               ? "text-blue-600 border-blue-600 border-b-2"
               : "text-slate-600",
           )}
         >
-          <a href="#">Sentiments</a>
+          <a href="#sentiments">Sentiments</a>
         </li>
         <li
           className={clsx(
             "py-2 ",
-            active
+            currentPath === "#team"
               ? "text-blue-600 border-blue-600 border-b-2"
               : "text-slate-600",
           )}
         >
-          <a href="#">Team</a>
+          <a href="#team">Team</a>
         </li>
         <li
           className={clsx(
             "py-2 ",
-            active
+            currentPath === "#technicals"
               ? "text-blue-600 border-blue-600 border-b-2"
               : "text-slate-600",
           )}
         >
-          <a href="#">Techincals</a>
+          <a href="#technicals">Techincals</a>
         </li>
         <li
           className={clsx(
             "py-2 ",
-            active
+            currentPath === "#tokenomics"
               ? "text-blue-600 border-blue-600 border-b-2"
               : "text-slate-600",
           )}
         >
-          <a href="#">Tokenomics</a>
+          <a href="#tokenomics">Tokenomics</a>
         </li>
       </ul>
     </nav>
   );
 };
 
-export default SubHeader;
+export default SubNavbar;

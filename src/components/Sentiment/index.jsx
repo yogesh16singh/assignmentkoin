@@ -3,7 +3,10 @@ import { H2, H3 } from "../shared/Typography";
 import { IoMdInformationCircle } from "react-icons/io";
 const Sentiment = () => {
   return (
-    <section className="p-6 rounded-lg shadow-lg bg-white max-w-5xl w-full my-4">
+    <section
+      className="p-6 rounded-lg shadow-lg bg-white max-w-5xl w-full my-4"
+      id="sentiments"
+    >
       <div>
         <H2 value={"Sentiment"} />
         <div className="flex items-center gap-2">
