@@ -1,7 +1,12 @@
+import { TrendingContextProvider } from "./context/TrendingContext";
 import LandingPage from "./pages/LandingPage";
 
 const App = () => {
-  return <LandingPage />;
+  return (
+    <TrendingContextProvider>
+      <LandingPage />
+    </TrendingContextProvider>
+  );
 };
 
 export default App;
