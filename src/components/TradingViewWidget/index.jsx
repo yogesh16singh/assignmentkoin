@@ -1,6 +1,6 @@
 import { useEffect, useRef, memo } from "react";
 
-function TradingViewWidget({ coin_id }) {
+function TradingViewWidget({ coin_id = "BTC" }) {
   const container = useRef();
 
   useEffect(() => {

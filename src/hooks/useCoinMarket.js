@@ -23,7 +23,7 @@ const useCoinMarket = (id) => {
 
       const data = await response.json();
 
-      setDescription(data.description.en);
+      setDescription(data?.description?.en);
     };
     fetchCoinMarket();
     fetchCoinDescription();

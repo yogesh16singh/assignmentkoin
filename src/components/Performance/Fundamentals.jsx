@@ -67,7 +67,7 @@ const Fundamentals = ({ coinMarketDetail }) => {
           <div className="text-slate-600/80 text-sm py-3 border-b-slate-700/20 border-b-2 flex justify-between">
             Market Cap Dominance
             <span className="text-black text-right">
-              {volumeIsToMarketCap * 12}%
+              {(volumeIsToMarketCap * 120).toFixed(2)}%
             </span>
           </div>
           <div className="text-slate-600/80 text-sm py-3 border-b-slate-700/20 border-b-2 flex justify-between">

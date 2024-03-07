@@ -23,7 +23,10 @@ const About = () => {
       <H2 value={`About ${id}`} />
       <div className="border-b-slate-600/20 border-b-2">
         <H3 value={`What is ${id}?`} />
-        <p className="text-sm pb-2">{description}</p>
+        <p
+          className="text-sm pb-2"
+          dangerouslySetInnerHTML={{ __html: description }}
+        ></p>
       </div>
       <article className="border-b-slate-600/20 border-b-2">
         <H3 value={`How does ${id} work?`} />
