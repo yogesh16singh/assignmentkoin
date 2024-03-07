@@ -19,3 +19,6 @@ export const formattedNum = (num) => {
 
   return num.toLocaleString();
 };
+export const lerp = (value, outputMin, outputMax) => {
+  return outputMin + ((outputMax - outputMin) / 100) * value;
+};

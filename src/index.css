@@ -21,3 +21,30 @@ html {
   color: rgba(0, 0, 0, 0.44);
   line-height: 1.2;
 }
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: linear-gradient(to right, red, yellow, green);
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 10px solid rgb(0, 0, 0);
+  cursor: pointer;
+  position: relative;
+  top: 15px;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
