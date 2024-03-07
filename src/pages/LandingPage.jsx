@@ -4,14 +4,17 @@ import Container from "../layouts/Container";
 import Tokenomics from "../components/Tokenomics";
 import Performance from "../components/Performance";
 import About from "../components/About";
-// import Sidebar from "../components/Sidebar";
+import Sidebar from "../components/Sidebar";
 import Sentiment from "../components/Sentiment";
 import SubHeader from "../components/SubHeader";
+import Hero from "../components/Hero";
+
 const LandingPage = () => {
   return (
     <>
       <Header />
       <Container>
+        <Hero />
         <SubHeader />
         <Performance />
         <Sentiment />
@@ -19,7 +22,7 @@ const LandingPage = () => {
         <Tokenomics />
         <Team />
       </Container>
-      {/* <Sidebar /> */}
+      <Sidebar />
     </>
   );
 };
